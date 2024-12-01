@@ -1,0 +1,35 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(to right, #64744e, #67deff); */
+    color: #fff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  #temperatureChart {
+    max-width: 90%;
+    margin: 30px auto;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
