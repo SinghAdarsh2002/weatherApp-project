@@ -22,7 +22,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
   
-  #temperatureChart {
+  .temperatureChart {
     max-width: 90%;
     margin: 30px auto;
     background: rgba(0, 0, 0, 0);
