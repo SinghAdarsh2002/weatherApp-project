@@ -59,7 +59,12 @@ const getWeather = (city,chart_lable) => {
       speed.innerHTML = Math.round((response.wind.speed)*18/5);
       speed2.innerHTML = Math.round((response.wind.speed)*18/5);
       deg.innerHTML = response.wind.deg;
-      visibility.innerHTML = response.visibility;
+      visibility.innerHTML = (response.visibility / 1000).toFixed(2) + ' km';
+
+      if(tempCelsius<=10){
+        alert(`Attention: Low Temperature Alert! Outdoor temperature is ${tempCelsius} °C. 
+          Please ensure workers have adequate protection, and take regular breaks to stay warm.`);
+      }
 
       // Collect temperature data for the graph
       // const temperatureData = [tempCelsius, feelsLikeCelsius, tempMinCelsius, tempMaxCelsius];
